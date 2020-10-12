@@ -360,6 +360,7 @@ public class Design extends javax.swing.JFrame {
          String file_join = jLabel8.getText().trim();
          String file_name = jLabel5.getText().trim();  
          String file_size = jLabel6.getText().trim();
+         String file_dist = jTextArea1.getText().trim();
          
          if(file_join.equals("") || file_join.equals(null) || file_name.equals("") || file_name.equals(null) || file_size.equals("") || file_size.equals(null))
              
@@ -378,7 +379,7 @@ public class Design extends javax.swing.JFrame {
                 {
             System.out.println(" "+file_join);
             File file_src = new File(file_join);
-            File file_dst = new File("D:\\prabeer\\Data\\java\\Coding\\Java FTP\\save\\"+file_name);
+            File file_dst = new File(file_dist);
             
             System.out.println("Started coping...");
             jLabel12.setText("Started Copying...");
